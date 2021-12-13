@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@500&display=swap');
+
+*{
+	font-family: 'David Libre';
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("../images/login.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	background-size: cover;
+}
+
+form {
+	width: 600px;
+	border: 2px solid #ccc;
+	background: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7));
+	border-radius: 15px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 40px;
+	color: whitesmoke;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
+	color: whitesmoke;
+	font-size: 30px;
+}
+
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+label {
+	color: #888;
+	font-size: 17px;
+	padding: 5px;
+}
+
+button {
+	float: right;
+	font-size: 16px;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+
+button:hover{
+	background: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.ba{
+	text-decoration: none;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	float: right;
+	margin-bottom: 5px;
+}
+.ba:hover{
+	background: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+
+.ca {
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.ca:hover {
+	text-decoration: underline;
+} 
+
+.home-nav a {
+	text-decoration: none;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+}
+
+.home-nav a:hover{
+	background: white;
+	color: black;
+	box-shadow: 0 0 10px white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.book-btn {
+	float: right;
+    width: 190px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #555;
+    border-radius: 5px;
+
+    /* box-shadow: 4px 10px 30px rgba(24,139,119,0.2); */
+}
+
+.book-btn:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    /* transition: all ease 0.2s; */
+}
+
