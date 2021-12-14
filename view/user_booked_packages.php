@@ -64,21 +64,16 @@ include "../control/db_conn.php";
       <?php
       $i=0;
           $session_id = $_SESSION['id'];
-          $sql = "Select  id , user_id, dateTime, package, meal, schedule, status from booking where user_id = '$session_id' ORDER BY schedule";
+          $sql = "Select  id , user_id, dateTime, Location, package, meal, schedule, status from booking where user_id = $session_id ORDER BY schedule";
           $result = mysqli_query($conn, $sql);
 
-          $options = "";
 
 
 
           if(mysqli_num_rows($result) > 0){
               while($row = $result->fetch_assoc()){
-                while($row1 = mysqli_fetch_array($result))
-{
-    $options = $options."<option>$row1[0]</option>";
-
-                  echo "<tr id='{$i}'> <td class='row-data'> {$row["id"]} </td> <td class='row-data'> {$row["user_id"]} </td> <td> {$row["dateTime"]} </td> <select> {$options["package"]} </select> <select> {$options["meal"]} </select> <td> {$row["schedule"]}   </td><td> {$row["status"]}   </td> <td><button type='button' class='btn btn-danger rounded-1 cancel-btn' data-bs-toggle='modal' data-bs-target='#exampleModal' onclick='cancleBooking()' ><i class='far fa-times-circle me-1'></i>Cancel</button>  </td> </tr>";
-                $i++;}
+                  echo "<tr id='{$i}'> <td class='row-data'> {$row["id"]} </td> <td class='row-data'> {$row["user_id"]} </td> <td> {$row["dateTime"]} </td> <td class='row-data'> {$row["Location"]} </td> <td class='row-data'> {$row["package"]} </td> <td class='row-data'> {$row["meal"]} </td> <td> {$row["schedule"]}   </td><td> {$row["status"]}   </td> <td><button type='button' class='btn btn-danger rounded-1 cancel-btn' data-bs-toggle='modal' data-bs-target='#exampleModal' onclick='cancleBooking()' ><i class='far fa-times-circle me-1'></i>Cancel</button>  </td> </tr>";
+                $i++;
               }
           }
       

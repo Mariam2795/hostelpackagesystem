@@ -25,7 +25,8 @@
 
           <div class="d-grid gap-2 d-md-flex justify-content-md-end button-style">
 
-            <a  href="contact.php">Packages</a>
+            <a  href="singleroom.php">Room Details</a>
+            
             <a  href="signup.php">Sign Up</a>
 
             <div class="btn-group" role="group">
@@ -45,8 +46,8 @@
 
       </nav>
 
-      <div class="text"> 
-        <p> Book Your Package<br>According To Your Choice</p>
+      <div class="text">
+        <p><b><u>PrityLata Hostel</u></b><br><br> Book Your Package,<br>According To Your Choice🌺</p>
       </div>
 
     </div>

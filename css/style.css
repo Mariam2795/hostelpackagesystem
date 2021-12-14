@@ -7,6 +7,14 @@ body {
     font-family: 'David Libre';
 }
 
+h1{
+    padding: 60px;
+    text-align: center;
+    background: whitesmoke;
+    color: whitesmoke;
+    font-size: 30px;
+  }
+
 #home {
     height: 100vh;
     background-repeat: no-repeat;
@@ -55,6 +63,7 @@ body {
 }
 
 .button-style a {
+    float: right;
     text-decoration: none;
     background: #555;
     padding: 10px 15px;
